@@ -1,0 +1,158 @@
+.offers {
+  position: relative;
+  width: 100%;
+  padding: 25px 0;
+
+  background: #bbbbbb url("../img/bg/bg_offers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% bottom;
+
+  overflow: hidden;
+
+  background-blend-mode: screen;
+
+  box-sizing: border-box;
+
+  @media @tablet-widths {
+
+    padding: 40px 0;
+    padding-bottom: 20px;
+  }
+}
+
+.offers__title {
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-family: OpenSans, sans-serif;;
+  color: @txt-grey;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 3px;
+
+  text-align: center;
+
+  @media @desktop-widths {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+.offers__item-image-box {
+  margin-bottom: 10px;
+}
+
+.offers__item-image {
+  display: block;
+  width: 300px;
+  height: auto;
+
+  overflow: hidden;
+
+  @media @desktop-widths {
+    width: 450px;
+  }
+}
+
+.offers__list {
+
+  @media @tablet-widths {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.offers__item {
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  padding-bottom: 20px;
+  width: 300px;
+
+  box-sizing: border-box;
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
+
+  @media @desktop-widths {
+    width: 450px;
+  }
+
+}
+
+.offers__item-description {
+  margin: 0;
+
+  font-family: OpenSans, sans-serif;;
+  color: @txt-grey;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+
+  @media @desktop-widths {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.offers__item-discount {
+  display: block;
+  margin: 10px 0;
+
+  font-family: OpenSans, sans-serif;;
+  color: @txt-hover;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+
+  @media @desktop-widths {
+    margin: 15px 0;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.offers__btn-info {
+  padding: 5px 20px;
+  font-family: OpenSans, sans-serif;;
+  color: #fff;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+
+  text-align: center;
+
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.5);
+
+  &:hover {
+    background-color: rgba(0,0,0,0.3);
+  }
+
+  &:active {
+    color: @txt-hover;
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    border: 0;
+  }
+
+  @media @desktop-widths {
+    padding: 8px 30px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}

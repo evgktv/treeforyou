@@ -1,0 +1,86 @@
+.contact {
+  position: relative;
+  width: 100%;
+
+  @media @tablet-widths {
+
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.contact__box {
+  width: 100%;
+
+  padding: 40px 20px;
+
+  background: #333333 url("../img/bg/bg_contact.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% top;
+
+  overflow: hidden;
+
+  background-blend-mode: screen;
+
+  box-sizing: border-box;
+
+  @media @tablet-widths {
+
+    width: 400px;
+  }
+}
+
+.contact__type {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  &:nth-child(2) {
+    margin-bottom: 45px;
+  }
+
+  &:nth-child(3) {
+    margin-bottom: 35px;
+  }
+}
+
+.contact__type-name {
+  width: 90px;
+  font-weight: 700;
+}
+
+.contact__type-name,
+.contact__data {
+  margin: 0;
+
+  font-family: OpenSans, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: @txt-grey;
+
+  @media @tablet-widths {
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.contact__map {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background-image: url("../img/map.jpg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media @tablet-widths {
+    height: auto;
+  align-content: stretch;
+  align-items: stretch;
+  align-self: stretch;
+  }
+}
